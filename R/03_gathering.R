@@ -43,7 +43,7 @@ EclSum <- function(casename = "^.+", basedir = "tmp"){
 # keep all of the python in one function, for later removal (I hope)
 .GetECL <- function(case, infile, outfile){
   rPython::python.exec("import sys")
-  rPython::python.exec("import ecl")
+  rPython::python.exec("import ecl.summary as ecl")
 #  rPython::python.exec("import ecl.ecl as ecl")
 #  rPython::python.exec("import ert.ecl.ecl as ecl")
   rPython::python.assign("case",case)
